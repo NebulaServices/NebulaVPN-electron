@@ -1,9 +1,6 @@
 const { app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path');
-
-if (require('electron-squirrel-startup')) {
-  app.quit();
-}
+const publicDirectory = __dirname + "/public/"
 
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
@@ -23,13 +20,13 @@ const createWindow = () => {
       nodeIntegration: true,
       contextIsolation: false,
       devTools: true,
-      preload: path.join(__dirname, 'preload.js'),
+      preload: path.join(publicDirectory, 'preload.js'),
     },
     icon: path.join(__dirname, 'favicon.ico'),
   });
 
   mainWindow.setMenuBarVisibility(false);
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  mainWindow.loadFile(path.join(publicDirectory, 'index.html'));
 
   // mainWindow.webContents.openDevTools();
   mainWindow.webContents.on('did-finish-load', () => {

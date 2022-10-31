@@ -1,0 +1,21 @@
+{
+  "name": "NebulaVPN",
+  "productName": "NebulaVPN",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "build": "npx electron-packager ./ NebulaVPN --overwrite"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Linux Snoot",
+    "email": "49733954+NovaAppsInc@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^21.1.0",
+    "electron-packager": "^17.0.0"
+  }
+}
