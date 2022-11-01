@@ -1,0 +1,73 @@
+@font-face {
+    font-family: pro;
+    src: url(./Product.ttf);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #5c557e;
+    border-radius: 6px;
+  }
+  
+  html {
+    height: 100%;
+    margin: 0%;
+  }
+  
+  body {
+    background-color: #191724;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #F2F2F2;
+    font-family: pro;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+  .iconB {
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    -webkit-app-region: no-drag;
+  }
+  
+  .divets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #191724;
+    -webkit-app-region: no-drag;
+  }
+  
+  
+  header {
+    position: relative;
+    background-color: #353148;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 4px 4px 6px;
+    -webkit-app-region: drag;
+    height: 35px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .NebVPNLogo {
+    position: absolute;
+    left: 6px;
+    height: 18px;
+  }
